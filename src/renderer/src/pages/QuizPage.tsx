@@ -221,7 +221,7 @@ export default function QuizPage(): React.JSX.Element {
       <Button
         onClick={submitQuiz}
         disabled={Boolean(result)}
-        className="fixed bottom-6 right-6 z-40 h-12 rounded-2xl px-5 shadow-[0_10px_30px_rgba(0,0,0,0.45)]"
+        className="fixed bottom-6 right-6 z-40 h-12 rounded-2xl px-5 shadow-[0_6px_16px_rgba(0,0,0,0.18)]"
       >
         Submit test ({answeredCount}/{safeCount})
       </Button>
