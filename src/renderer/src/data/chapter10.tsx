@@ -85,7 +85,7 @@ export const chapter10: BaseQuestion[] = [
     correct: 'Hold the steering wheel firmly, and ease up on the gas',
     wrong: [
       'Speed up to gain traction and then pull to the right',
-      'Hold the steering wheel firmly, and ease up on the gas',
+      'Apply the brakes hard and pull off the road quickly',
       'Apply the brakes, then shift into neutral'
     ],
     explanation: 'Maintain control and slow down.'

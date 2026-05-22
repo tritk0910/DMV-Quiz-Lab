@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { FileClock, House, MoonStar, NotebookPen, Sun } from 'lucide-react'
 import { cn } from '@renderer/lib/utils'
+import { ScrollToTop } from '@renderer/components/ScrollToTop'
 
 const links = [
   { to: '/', label: 'Home', icon: House },
@@ -43,7 +44,7 @@ export function Layout(): React.JSX.Element {
   return (
     <div
       className={cn(
-        'relative min-h-screen overflow-hidden',
+        'relative min-h-screen overflow-x-hidden',
         isDark ? 'bg-zinc-950 text-zinc-100' : 'bg-stone-100 text-zinc-900'
       )}
     >
@@ -57,7 +58,7 @@ export function Layout(): React.JSX.Element {
       />
       <header
         className={cn(
-          'sticky top-0 z-20 border-b backdrop-blur',
+          'fixed inset-x-0 top-0 z-20 border-b backdrop-blur',
           isDark
             ? 'border-zinc-800/80 bg-zinc-950/80'
             : 'border-zinc-300/80 bg-stone-100/80'
@@ -122,9 +123,10 @@ export function Layout(): React.JSX.Element {
         </div>
       </header>
 
-      <main className="relative z-10 mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
+      <main className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-8 pt-24 sm:px-6">
         <Outlet />
       </main>
+      <ScrollToTop isDark={isDark} />
     </div>
   )
 }

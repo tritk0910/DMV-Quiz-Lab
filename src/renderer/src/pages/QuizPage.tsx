@@ -73,6 +73,7 @@ export default function QuizPage(): React.JSX.Element {
       createdAt: new Date().toISOString(),
       ...score
     })
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (

@@ -219,6 +219,7 @@ export const roadSigns: BaseQuestion[] = [
       'No trucks allowed',
       'Truck stop ahead'
     ],
-    explanation: 'Trucks prohibited.'
+    explanation:
+      'Warning: a steep grade is ahead — slow down, shift to a lower gear, and check your brakes.'
   }
 ]
