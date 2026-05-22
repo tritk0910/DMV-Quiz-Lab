@@ -1,4 +1,5 @@
 import { BaseQuestion } from './questionBank'
+import { signUrl } from './signImages'
 
 export const chapter10: BaseQuestion[] = [
   {
@@ -103,7 +104,7 @@ export const chapter10: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/railroad.png" className="mb-2 h-20" />
+        <img src={signUrl('railroad')} className="mb-2 h-20" />
         <p>This sign is a warning that you are approaching:</p>
       </div>
     ),

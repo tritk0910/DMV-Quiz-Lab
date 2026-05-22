@@ -1,4 +1,5 @@
 import { BaseQuestion } from './questionBank'
+import { signUrl } from './signImages'
 
 export const chapter5: BaseQuestion[] = [
   {
@@ -115,7 +116,7 @@ export const chapter5: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/lefthandup.png" className="mb-2 h-20" />
+        <img src={signUrl('lefthandup')} className="mb-2 h-20" />
         <p>
           The driver&apos;s left hand and arm are extended upward. This hand
           signal means that the driver plans to:
@@ -162,7 +163,7 @@ export const chapter5: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/lefthanddown.png" className="mb-2 h-20" />
+        <img src={signUrl('lefthanddown')} className="mb-2 h-20" />
         <p>
           The driver&apos;s left arm and hand are extended downward. This hand
           signal means that the driver plans to:

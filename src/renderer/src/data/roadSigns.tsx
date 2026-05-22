@@ -1,10 +1,11 @@
 import { BaseQuestion } from './questionBank'
+import { signUrl } from './signImages'
 
 export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/slippery.png" className="mb-2 h-20" />
+        <img src={signUrl('slippery')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -19,7 +20,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/noleftturn.png" className="mb-2 h-20" />
+        <img src={signUrl('noleftturn')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -30,7 +31,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/railroad.png" className="mb-2 h-20" />
+        <img src={signUrl('railroad')} className="mb-2 h-20" />
         <p>This sign is a warning that you are approaching:</p>
       </div>
     ),
@@ -41,7 +42,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/mergingtrafficfromright.png" className="mb-2 h-20" />
+        <img src={signUrl('mergingtrafficfromright')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -52,7 +53,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/hospital.png" className="mb-2 h-20" />
+        <img src={signUrl('hospital')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -67,7 +68,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/nouturn.png" className="mb-2 h-20" />
+        <img src={signUrl('nouturn')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -78,7 +79,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/stop.png" className="mb-2 h-20" />
+        <img src={signUrl('stop')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -93,7 +94,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/twowaytraffic.png" className="mb-2 h-20" />
+        <img src={signUrl('twowaytraffic')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -108,7 +109,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/school.png" className="mb-2 h-20" />
+        <img src={signUrl('school')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -119,7 +120,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/keepright.png" className="mb-2 h-20" />
+        <img src={signUrl('keepright')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -134,7 +135,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/trafficlightahead.png" className="mb-2 h-20" />
+        <img src={signUrl('trafficlightahead')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -149,7 +150,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/dividedhighwayends.png" className="mb-2 h-20" />
+        <img src={signUrl('dividedhighwayends')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -164,7 +165,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/donotenter.png" className="mb-2 h-20" />
+        <img src={signUrl('donotenter')} className="mb-2 h-20" />
         <p>This sign is used to prevent:</p>
       </div>
     ),
@@ -179,7 +180,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/rightlaneendskeepleft.png" className="mb-2 h-20" />
+        <img src={signUrl('rightlaneendskeepleft')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -194,7 +195,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/yield.png" className="mb-2 h-20" />
+        <img src={signUrl('yield')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
@@ -209,7 +210,7 @@ export const roadSigns: BaseQuestion[] = [
   {
     prompt: (
       <div>
-        <img src="/signs/hillahead.png" className="mb-2 h-20" />
+        <img src={signUrl('hillahead')} className="mb-2 h-20" />
         <p>This sign means:</p>
       </div>
     ),
