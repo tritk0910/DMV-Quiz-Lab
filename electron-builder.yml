@@ -14,11 +14,11 @@ asarUnpack:
 win:
   executableName: dmv-quiz-lab
   icon: resources/icon.png
-nsis:
-  artifactName: ${name}-${version}-setup.${ext}
-  shortcutName: ${productName}
-  uninstallDisplayName: ${productName}
-  createDesktopShortcut: always
+  target:
+    - target: portable    # single-file portable .exe
+      arch: [x64]
+portable:
+  artifactName: ${name}-${version}-portable.${ext}
 mac:
   icon: resources/icon.png
   entitlementsInherit: build/entitlements.mac.plist
@@ -41,8 +41,5 @@ linux:
 appImage:
   artifactName: ${name}-${version}.${ext}
 npmRebuild: false
-publish:
-  provider: generic
-  url: https://example.com/auto-updates
 electronDownload:
   mirror: https://npmmirror.com/mirrors/electron/
